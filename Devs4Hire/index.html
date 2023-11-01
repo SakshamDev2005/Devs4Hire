@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+
+        <title>Devs 4 Hire</title>
+        
+        <style>
+            body {
+                color: black;
+                text-align: center;
+                scroll-behavior: smooth;
+            }
+
+            @font-face {
+                font-family: popB;
+                src: url(Fonts/Poppins-Bold.ttf);
+              }
+
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                background: rgba( 0, 0, 0, 0.4 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 15px );
+                -webkit-backdrop-filter: blur( 15px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );  
+                position: sticky;
+                top: 0;
+            }
+
+            nav ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+            }
+
+            nav ul li {
+                padding: 0 40px;
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                font-size: 40px;
+                
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                font-size: 40px;
+                font-family: popB;
+                transition: all ease 0.7s;
+            }
+
+            nav ul li a:hover {
+                color: cyan;
+            }
+
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 80px;
+                margin-top: 20px;
+            }
+
+            h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 50px;
+                margin-top: 20px;
+            }
+
+            p { 
+                font-size: 50px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+
+            button {
+                color: white;
+                background-color: black;
+                font-size: 50px;
+                border: 5px solid black;
+                border-radius: 50px;
+                transition: all ease 0.6s;
+            }
+
+            button:hover {
+                border-radius: 15px;
+                color: black;
+                background-color: transparent;
+            }
+
+            .footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                position: relative;
+                top: 99%;
+            }
+
+            .home {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                color: black;
+            }
+
+            .about {
+                margin-top: 50px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="t&c.html">T & C</a></li>
+            </ul>
+        </nav>
+
+        <div class="home">
+            <h1>Devs 4 Hire</h1>
+            <h2>You Say , We Code</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe34b8xT-6WjHWV0ikoZTMU35z5CzdbohZ9beK2R96-Y9z8Qg/viewform"><button>Enquire</button></a>
+        </div>
+
+        <div class="about" id="about">
+            <hr>
+            <h2>ABOUT US</h2>
+            <P>
+            We are a team of experienced and passionate developers from Jaipur, specializing in custom software development. We work closely with our clients to understand their unique needs
+             and develop tailored solutions that help them achieve their goals.
+            </P>
+        </div>
+        <div id="pricing" class="pricing"></div>
+        <div id="contact" class="contact"></div>
+        <footer>
+            <hr>
+            <div class="footer">
+                <p> 2023 © Copyright Devs4Hire</p>
+            </div>
+        </footer>
+
+        <script>ScrollReveal().reveal('.home', { delay: 1000, distance: "15%" });</script>
+        <script>ScrollReveal().reveal('.about', { delay: 1500, distance: "15%" });</script>
+
+    </body>
+</html>
