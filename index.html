@@ -11,14 +11,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
         <script>
-            $(document).ready(function(){
-              $(".navbar").click(function(){
-                $("ul").toggle(1000);
-              });
+           $(document).ready(function() {
+            if (window.matchMedia("(max-width: 600px)").matches) {
+                $(".navbar").click(function() {
+                    $("ul").toggle(1000);
+                });
+            } 
             });
         </script>
-
-        <script src="Devs4Hire/JS/frnt.js"></script>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
 
@@ -57,7 +57,7 @@
             }
 
             nav ul li {
-                padding: 0 30px;
+                padding: 0 10px;
                 text-decoration: none;
                 list-style: none;
                 color: white;
