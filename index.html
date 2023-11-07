@@ -12,7 +12,7 @@
 
         <script>
            $(document).ready(function() {
-            if (window.matchMedia("(max-width: 600px)").matches) {
+            if (window.matchMedia("(max-width: 900px)").matches) {
                 $(".navbar").click(function() {
                     $("ul").toggle(1000);
                 });
@@ -57,7 +57,7 @@
             }
 
             nav ul li {
-                padding: 0 10px;
+                padding: 0 30px;
                 text-decoration: none;
                 list-style: none;
                 color: white;
@@ -78,17 +78,6 @@
             nav ul li a:hover {
                 color: cyan;
             }
-
-            .showb , .hideb {
-                display: none;
-                font-size: 30px;
-                border-radius: 0;
-                background-color: transparent;
-                border: none;
-                position: relative;
-                left: -120px;
-            }
-
 
             h1 {
                 font-family: Arial, Helvetica, sans-serif;
@@ -152,7 +141,7 @@
                 padding: 0 75px;
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 900px) {
 
                 .home {
                     height: 500px;
@@ -164,8 +153,8 @@
 
                 nav ul {
                     display: none;
-                    height: 400px;
-                    width: 90%;
+                    height: 490px;
+                    width: 70%;
                     padding: 0 10px;
                     z-index: 50;
                     flex-direction: column;
@@ -180,7 +169,7 @@
                 }
 
                 nav ul li {
-                    margin: 10px 10px;
+                    padding: 25px 10px;
                 }
 
                 nav ul li a {
@@ -194,9 +183,7 @@
 
     <body>
 
-        <nav class="navbar">
-            <button class="showb">Show</button>
-            <button class="hideb">Hide</button>          
+        <nav class="navbar">        
               <ul>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
