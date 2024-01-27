@@ -22,7 +22,7 @@
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
 
-        <title>Devs 4 Hire</title>
+        <title>Devs4Hire</title>
     
         
         <style>
@@ -34,8 +34,13 @@
 
             @font-face {
                 font-family: popB;
-                src: url(/Devs4Hire/Fonts/Poppins-Bold.ttf);
+                src: url(/Fonts/Poppins-Bold.ttf);
               }
+
+            @font-face {
+                font-family: Terrabyte;
+                src: url(/Fonts/Terrabyte-Regular.ttf);
+            }
 
             nav {
                 padding: 10px;
@@ -111,15 +116,6 @@
                 background-color: transparent;
             }
 
-            .footer {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-direction: column;
-                position: relative;
-                top: 99%;
-            }
-
             .home {
                 display: flex;
                 align-items: center;
@@ -139,6 +135,40 @@
                 align-items: center;
                 font-size: 60px;
                 padding: 0 75px;
+            }
+
+            .footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                position: relative;
+                top: 99%;
+            }
+
+             .footer-links .terms {
+                color: gray;
+                font-size: 40px;
+                text-align: center;
+                list-style: none;
+                text-decoration: none;
+            }
+
+            .pricing {
+                padding: 0 20px ;
+            }
+
+            table , th , td {
+                border: 3px solid gray;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 40px;
+                padding: 10px 10px ;
+            }
+
+            table {
+                margin: 25px auto;
+
             }
 
             @media screen and (max-width: 900px) {
@@ -174,11 +204,7 @@
 
                 nav ul li a {
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
-                }
-
-                .pricing {
-                    padding: 20px 20px;
-                }
+                }                
 
             }
         </style>
@@ -197,7 +223,7 @@
         </nav>
 
         <div class="home">
-            <h1>Devs 4 Hire</h1>
+            <h1 style="font-family: Terrabyte; font-size: 100px;">Devs 4 Hire</h1>
             <h2>You Say , We Code</h2>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe34b8xT-6WjHWV0ikoZTMU35z5CzdbohZ9beK2R96-Y9z8Qg/viewform" target="_blank"><button>Enquire</button></a>
         </div>
@@ -211,9 +237,11 @@
             </P>
         </div>
         <div id="pricing" class="pricing">
+            <hr>
+            <h2>PRICING</h2>
             <table>
                 <tr>
-                    <th>Skills</th>
+                    <th>Work</th>
                     <th>Pricing</th>
                 </tr>
                 <tr>
@@ -224,18 +252,24 @@
                     <td>Graphic Desgin</td>
                     <td>₹2099</td>
                   </tr>
+            </table>
         </div>
+
         <div id="contact" class="contact"></div>
-        <footer>
+
+        <footer class="footerpage">
             <hr>
             <div class="footer">
-                <a href="t&c.html" class="t/c">T & C</a>
+                <div class="footer-links">
+                    <a href="t&c.html" class="terms">T & C</a>
+                </div>
                 <p> © Copyright Devs4Hire. All Rights Reserved.</p>
             </div>
         </footer>
 
         <script>ScrollReveal().reveal('.home', { delay: 1000, distance: "15%" });</script>
         <script>ScrollReveal().reveal('.about', { delay: 1500, distance: "15%" });</script>
-        <script>ScrollReveal().reveal('.footer', { delay: 2000, distance: "15%" });</script>
+        <script>ScrollReveal().reveal('.pricing', { delay: 2000, distance: "15%" });</script>
+        <script>ScrollReveal().reveal('.footerpage', { delay: 2500, distance: "15%" });</script>
     </body>
 </html>
